@@ -113,7 +113,8 @@ def sim(seed, data: dict):
 
 
 def Chapter_Test(Chapter: int, data: dict):
-    print("Chapter Test")
+    questions = data[str(Chapter)]["questions"]
+    test(questions, False)
 
 
 if __name__ == "__main__":
